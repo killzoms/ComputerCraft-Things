@@ -47,8 +47,7 @@ local function checkForUpdates()
  
  
   local old = bccapi.fileToString(shell.getRunningProgram())
-  if old ~= new then error("Not up to date!", 0)
-  else print("Up to date!") end
+  if old ~= new then error("Not up to date, please update with pastebin get "..pastebinId.."!", 0)
 end
  
  
